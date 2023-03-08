@@ -1,0 +1,118 @@
+/* UTILIDADES */
+.titulo{
+    color: #2e855e;
+    text-align: center;
+    text-decoration: underline;
+}
+.center{
+    text-align: center;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+#tabla2{
+    border-collapse: separate;
+    border-spacing: 0.4em 1em;
+    text-align: left;
+}
+/* botón */
+.btn{
+    background-color: #FFFFFF;
+    border: 1px solid #2e855e;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #2e855e;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    padding: 13px 23px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+    transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+    user-select: none;
+    touch-action: manipulation;
+}
+
+.btn:hover {
+  background-color: #2e855e;
+  color: white;
+  border-color: #2e855e;
+  transform: scale(.96);
+}
+
+
+
+/* NAVEGACIÓN */
+.navBar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+    padding-bottom: 8px;
+}
+.linkNav > a{
+    text-decoration: none;
+    font-weight: bold;
+}
+a:link, a:visited{
+    color: #2e855ed8;
+}
+
+/* TARJETAS */
+.containerCards{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 25px;
+}
+.card{
+    flex: 1 0 26%;
+    height: 100%;
+    border-radius: 1.2rem;
+    padding-bottom: 0.8em;
+    box-shadow: black 0px 4px 5px;
+    margin-bottom: 20px;
+}
+img{
+    width: 100%;
+    max-height: 300px;
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
+}
+@media ( max-width: 868px) {
+    .card {
+        flex-basis: 34%;
+    }
+  }
+  
+@media ( max-width: 520px) {
+    .card {
+        flex-basis: 51%;
+    }
+}
+.cardBody{
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* HISTORIA */
+.containerHistoria{
+    width: 75%;
+    margin: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1.75em;
+}
